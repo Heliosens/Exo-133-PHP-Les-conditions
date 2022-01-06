@@ -4,20 +4,20 @@
 $a = 50;
 $b = 10;
 
-       >    {
+if($a > $b){
     echo "Hello World!";
 }
 
 //Deuxieme ligne
-    {
+if(!($a === $b)) {
     echo "<br><br>Hello World2";
 }
 
 //Troisieme ligne
-($a==b) {
+if($a==$b){
     echo "<br><br>Oui";
 }
-
+else
 {
     echo "<br><br>Non";
 }
@@ -25,11 +25,13 @@ $b = 10;
 
 //Quatrieme ligne
 echo"<br><br>";
- ($a == $b) {
+if($a === $b) {
     echo "1";
-}  ($a > $b) {
+}
+elseif ($a > $b) {
     echo "2";
 }
+else
 {
     echo "3";
 }
@@ -38,10 +40,20 @@ echo"<br><br>";
 //Cinquieme ligne
 echo"<br><br>";
 
- ($color) {
-    "red":
-    echo "Hello";
-   "green":
-    echo "Welcome";
+$color = 'red';
+
+switch($color) {
+    case "red":
+        echo "Hello";
+    break;
+    case "green":
+        echo "Welcome";
 }
 
+// - 6 -
+echo"<br><br>";
+
+$color = 'blue';
+if(!($color === 'green' && $color === 'red')){
+    echo "ni red ni green";
+}
